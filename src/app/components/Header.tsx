@@ -16,7 +16,7 @@ const Header = () => {
             <nav>
                 <ul className="flex wrap">
                     {navLink.map((nav) => (
-                        <li key={nav.name}>
+                        <li key={nav.name} className="py-2 px-4">
                             <Link href={nav.href}>{nav.name}</Link>
                         </li>
                     ))}
