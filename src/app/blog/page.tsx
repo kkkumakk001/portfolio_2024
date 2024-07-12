@@ -1,10 +1,13 @@
 import React from "react";
 import SectionTitle from "../../components/SectionTitle";
+import Container from "@/components/Container";
 
 const BlogPage = () => {
     return (
         <section>
-            <SectionTitle>BLOG</SectionTitle>
+            <Container>
+                <SectionTitle>BLOG</SectionTitle>
+            </Container>
         </section>
     );
 };

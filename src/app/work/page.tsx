@@ -1,10 +1,13 @@
 import React from "react";
 import SectionTitle from "../../components/SectionTitle";
+import Container from "@/components/Container";
 
 const WorkPage = () => {
     return (
         <section>
-            <SectionTitle>WORK</SectionTitle>
+            <Container>
+                <SectionTitle>WORK</SectionTitle>
+            </Container>
         </section>
     );
 };
