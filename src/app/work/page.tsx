@@ -1,9 +1,10 @@
 import React from "react";
+import SectionTitle from "../components/SectionTitle";
 
 const WorkPage = () => {
     return (
         <section>
-            <h2 className="text-xl">section page</h2>
+            <SectionTitle>WORK</SectionTitle>
         </section>
     );
 };
