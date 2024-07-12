@@ -1,7 +1,11 @@
+import Container from "@/components/Container";
+
 export default function Home() {
     return (
         <section>
-            <h1>initial commit</h1>
+            <Container>
+                <h1 className="font-semibold">Home</h1>
+            </Container>
         </section>
     );
 }
