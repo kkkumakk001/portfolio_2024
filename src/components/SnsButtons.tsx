@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const SnsButtons = () => {
     return (
-        <div className="flex wrap gap-2">
+        <div className="flex wrap gap-2 mb-8">
             <Button variant="outline" size="icon" className="rounded-full">
                 <Link href="https://x.com" target="_blank">
                     <TwitterLogoIcon className="w-4 h-4"></TwitterLogoIcon>
