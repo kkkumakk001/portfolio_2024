@@ -1,11 +1,9 @@
-import Container from "@/components/Container";
+import Hero from "@/components/Hero";
 
 export default function Home() {
     return (
         <section>
-            <Container>
-                <h1 className="font-semibold">Home</h1>
-            </Container>
+            <Hero></Hero>
         </section>
     );
 }
