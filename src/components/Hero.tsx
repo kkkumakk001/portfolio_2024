@@ -19,7 +19,7 @@ const Hero = () => {
                         ></Image>
                     </div>
                     <div className="w-full lg:w-1/2 flex flex-col wrap items-center lg:items-start lg:justify-center">
-                        <p className="font-bold text-4xl mb-8">K.K's PortFolio</p>
+                        <p className="font-bold text-4xl mb-8">{`K.K's PortFolio`}</p>
                         <SnsButtons></SnsButtons>
                         <ContactButton></ContactButton>
                     </div>
