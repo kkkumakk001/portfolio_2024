@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Header from "../components/Header";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 >
                     <Header></Header>
                     <main className="py-20">{children}</main>
+                    <Toaster></Toaster>
                     <Footer></Footer>
                 </ThemeProvider>
             </body>
