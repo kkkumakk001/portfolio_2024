@@ -127,9 +127,7 @@ const ContactForm = () => {
                             )}
                         />
                         <div className="flex justify-center">
-                            <Button className="min-w-[150px] w-1/3 md:w-1/4" disabled={isSending}>
-                                送信
-                            </Button>
+                            <Button className="min-w-[150px] w-1/3 md:w-1/4">送信</Button>
                         </div>
                     </form>
                 </Form>
