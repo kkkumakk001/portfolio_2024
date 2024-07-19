@@ -70,6 +70,7 @@ const ContactForm = () => {
                     description: "もう一度送信していただくか、TwitterのDMでも受け付けております。",
                 });
             } finally {
+                console.log(params);
                 form.reset();
                 setIsSending(false);
             }
@@ -78,7 +79,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="container py-[100px] flex items-center">
+        <div className="container pt-[80px] flex items-center">
             <div className="lg:w-[60%] w-full mx-auto">
                 <Form {...form}>
                     <form className="space-y-8" onSubmit={form.handleSubmit(onSubmit)}>
@@ -125,9 +126,11 @@ const ContactForm = () => {
                                 </FormItem>
                             )}
                         />
-                        <Button className="px-8" disabled={isSending}>
-                            送信
-                        </Button>
+                        <div className="flex justify-center">
+                            <Button className="min-w-[150px] w-1/3 md:w-1/4" disabled={isSending}>
+                                送信
+                            </Button>
+                        </div>
                     </form>
                 </Form>
             </div>
