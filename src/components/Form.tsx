@@ -29,7 +29,13 @@ const formShema = z.object({
 
 type formType = z.infer<typeof formShema>;
 
-const ContactForm = () => {
+type Props = {
+    emailUserId: string | undefined;
+    emailServiceId: string | undefined;
+    emailTemplateId: string | undefined;
+};
+
+const ContactForm = ({ emailUserId, emailServiceId, emailTemplateId }: Props) => {
     const [isSending, setIsSending] = useState(false);
     const { toast } = useToast();
 
@@ -43,9 +49,9 @@ const ContactForm = () => {
     });
 
     const onSubmit: SubmitHandler<formType> = async (data: formType) => {
-        const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
-        const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-        const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+        const userId = emailUserId;
+        const serviceId = emailServiceId;
+        const templateId = emailTemplateId;
 
         const { name, email, content } = data;
 
@@ -70,7 +76,6 @@ const ContactForm = () => {
                     description: "もう一度送信していただくか、TwitterのDMでも受け付けております。",
                 });
             } finally {
-                console.log(params);
                 form.reset();
                 setIsSending(false);
             }
@@ -127,7 +132,9 @@ const ContactForm = () => {
                             )}
                         />
                         <div className="flex justify-center">
-                            <Button className="min-w-[150px] w-1/3 md:w-1/4">送信</Button>
+                            <Button className="min-w-[150px] w-1/3 md:w-1/4" disabled={isSending}>
+                                送信
+                            </Button>
                         </div>
                     </form>
                 </Form>
