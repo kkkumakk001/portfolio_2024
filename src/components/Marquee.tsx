@@ -17,54 +17,54 @@ import Marquee from "react-fast-marquee";
 
 const icons = [
     {
-        icon: <SiJavascript color="#F7DF1E" />,
+        icon: <SiJavascript />,
         label: "JavaScript",
     },
     {
-        icon: <SiTypescript color="#3178C6" />,
+        icon: <SiTypescript />,
         label: "TypeScript",
     },
     {
-        icon: <SiReact color="#61DAFB" />,
+        icon: <SiReact />,
         label: "React",
     },
     {
-        icon: <SiNextdotjs color="#000000" />,
+        icon: <SiNextdotjs />,
         label: "Next.js",
     },
     {
-        icon: <SiTailwindcss color="#06B6D4" />,
+        icon: <SiTailwindcss />,
         label: "Tailwind CSS",
     },
     {
-        icon: <SiShadcnui color="#000000" />,
+        icon: <SiShadcnui />,
         label: "Shadcn/ui",
     },
     {
-        icon: <SiRadixui color="#161618" />,
+        icon: <SiRadixui />,
         label: "RadixUI",
     },
     {
-        icon: <SiSupabase color="#3FCF8E" />,
+        icon: <SiSupabase />,
         label: "Supabase",
     },
     {
-        icon: <SiVercel color="#000000" />,
+        icon: <SiVercel />,
         label: "Vercel",
     },
     {
-        icon: <SiGithub color="#181717" />,
+        icon: <SiGithub />,
         label: "GitHub",
     },
     {
-        icon: <SiNotion color="#000000" />,
+        icon: <SiNotion />,
         label: "Notion",
     },
 ];
 
 export default function SkillsMarquee() {
     return (
-        <div className="py-24 lg:py-16 mx-auto max-w-[800px] overflow-hidden">
+        <div className="my-24 lg:my-16 mx-auto max-w-[800px] overflow-hidden">
             <span className="sr-only">セクションタイトル</span>
             <Marquee
                 speed={30}
