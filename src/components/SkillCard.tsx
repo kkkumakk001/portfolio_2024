@@ -116,13 +116,9 @@ const skills = [
 
 const SkillCard = () => {
     return (
-        <div className="flex flex-wrap w-full justify-around mt-8">
+        <div className="grid gap-4 sm:gap-6 grid-cols-2 grid-rows-5 sm:grid-cols-3 sm:grid-rows-3 md:grid-cols-4 md:grid-rows-3  w-full mt-8">
             {skills.map((skill) => (
-                // <Card
-                //     key={skill.label}
-                //     className="min-w-[200px] max-w-[400px] w-[80%] sm:w-[45%] xl:w-[30%] mb-12 hover:bg-accent/90 duration-200"
-                // >
-                <Card key={skill.label} className="w-[137px] mb-12 hover:bg-accent/90 duration-200">
+                <Card key={skill.label} className="hover:bg-accent/90 duration-200">
                     <CardContent className="flex justify-center items-center pt-4 pb-2">
                         {skill.icon}
                     </CardContent>
@@ -130,10 +126,7 @@ const SkillCard = () => {
                         <CardTitle className="text-sm font-semibold text-center">
                             {skill.label}
                         </CardTitle>
-                        <CardDescription className="text-justify">
-                            {/* 各スキルの説明です、これはダミーです。テキストを入力してください。 */}
-                            {skill.level}
-                        </CardDescription>
+                        <CardDescription className="text-justify">{skill.level}</CardDescription>
                     </CardHeader>
                 </Card>
             ))}
