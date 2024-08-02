@@ -12,9 +12,9 @@ import SnsButtons from "./SnsButtons";
 
 const Footer = () => {
     return (
-        <footer className="py-8">
+        <footer className="py-8 bg-accent">
             <Container>
-                <div className="flex flex-col lg:flex-row lg:justify-between wrap items-center mb-8">
+                <div className="flex flex-col lg:flex-row lg:justify-between wrap items-center lg:items-start  mb-8">
                     <div>
                         <h1 className="font-semibold mb-4">
                             <Link href="/">Site LOGO</Link>
