@@ -12,7 +12,7 @@ const SectionWrap = ({ children, title, desc }: Props) => {
         <section className="py-8">
             <Container>
                 <h2 className="text-2xl font-semibold border-b-4 mb-4 max-w-fit">{title}</h2>
-                <p className="mb-12">{desc}</p>
+                <p className="mb-12 leading-loose">{desc}</p>
                 {children}
             </Container>
         </section>
