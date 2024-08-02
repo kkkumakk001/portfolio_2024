@@ -1,14 +1,12 @@
 import React from "react";
-import SectionTitle from "../../components/SectionTitle";
-import Container from "@/components/Container";
+import SectionWrap from "../../components/SectionWrap";
 
 const WorkPage = () => {
     return (
-        <section>
-            <Container>
-                <SectionTitle>WORK</SectionTitle>
-            </Container>
-        </section>
+        <SectionWrap
+            title="WORK"
+            desc="これまでに作成した作品です。コードや詳しい説明はREADMOREボタンから見れます。"
+        ></SectionWrap>
     );
 };
 

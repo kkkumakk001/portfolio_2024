@@ -1,16 +1,12 @@
 import React from "react";
-import SectionTitle from "../components/SectionTitle";
+import SectionWrap from "../components/SectionWrap";
 
 const NotFound = () => {
     return (
-        <section>
-            <SectionTitle>Not Found</SectionTitle>
-            <p>
-                お探しのページが見つかりませんでした。
-                <br />
-                URLをご確認の上、再度アクセスしてください。
-            </p>
-        </section>
+        <SectionWrap
+            title="Not Found"
+            desc="お探しのページが見つかりませんでした。URLをご確認の上、再度アクセスしてください。"
+        ></SectionWrap>
     );
 };
 

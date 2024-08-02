@@ -1,15 +1,11 @@
-import Container from "./Container";
-import SectionTitle from "./SectionTitle";
+import SectionWrap from "./SectionWrap";
 import SkillCard from "./SkillCard";
 
 const SkillSection = () => {
     return (
-        <Container>
-            <section>
-                <SectionTitle>Skills</SectionTitle>
-                <SkillCard></SkillCard>
-            </section>
-        </Container>
+        <SectionWrap title="Skill" desc="実務経験がないため、独自の基準でレベル感を表記しました。">
+            <SkillCard></SkillCard>
+        </SectionWrap>
     );
 };
 export default SkillSection;

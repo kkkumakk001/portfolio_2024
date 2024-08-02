@@ -4,7 +4,7 @@ import Container from "./Container";
 type Props = {
     title: string;
     desc: string;
-    children: React.ReactNode;
+    children?: React.ReactNode;
 };
 
 const SectionWrap = ({ children, title, desc }: Props) => {
