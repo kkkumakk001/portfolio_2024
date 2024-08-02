@@ -5,7 +5,7 @@ const BlogPage = () => {
     return (
         <SectionWrap
             title="BLOG"
-            desc="主にNext.jsの周辺技術について書いていることが多いです。Qiita、Zennの他にmicroCMSで作成したブログもあります"
+            desc="主にNext.jsの周辺技術について書いていることが多いです。Qiita、Zennの他にmicroCMSで作成したブログもあります。"
         ></SectionWrap>
     );
 };
