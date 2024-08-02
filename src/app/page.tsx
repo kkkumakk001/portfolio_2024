@@ -4,10 +4,10 @@ import SkillSection from "@/components/SkillSection";
 
 export default function Home() {
     return (
-        <section>
+        <>
             <Hero></Hero>
             <SkillsMarquee></SkillsMarquee>
             <SkillSection></SkillSection>
-        </section>
+        </>
     );
 }
