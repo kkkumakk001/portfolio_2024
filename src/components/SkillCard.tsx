@@ -118,11 +118,11 @@ const SkillCard = () => {
     return (
         <div className="grid gap-4 sm:gap-6 grid-cols-2 grid-rows-5 sm:grid-cols-3 sm:grid-rows-3 md:grid-cols-4 md:grid-rows-3 lg:grid-cols-6 lg:grid-rows-2  w-full mt-8">
             {skills.map((skill) => (
-                <Card key={skill.label} className="hover:bg-accent/90 duration-200">
+                <Card key={skill.label} className="hover:bg-accent/90 duration-200 ">
                     <CardContent className="flex justify-center items-center pt-4 pb-2">
                         {skill.icon}
                     </CardContent>
-                    <CardHeader className="pt-0 pb-2">
+                    <CardHeader className="pt-0 pb-4">
                         <CardTitle className="text-sm font-semibold text-center">
                             {skill.label}
                         </CardTitle>
