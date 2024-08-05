@@ -4,44 +4,26 @@ import Container from "./Container";
 import ContactButton from "./ContactButton";
 import SnsButtons from "./SnsButtons";
 
-// const navContent = [
-//     { name: "Work", href: "/work" },
-//     { name: "Blog", href: "/blog" },
-//     { name: "Contact", href: "/contact" },
-// ];
-
 const Footer = () => {
     return (
         <footer className="py-8 bg-accent">
             <Container>
-                <div className="flex flex-col lg:flex-row lg:justify-between wrap items-center lg:items-start  mb-8">
-                    <div>
-                        <h1 className="font-semibold mb-4">
-                            <Link href="/">Site LOGO</Link>
-                        </h1>
-                        <SnsButtons></SnsButtons>
-                    </div>
-                    {/* <nav className=" text-center pb-8">
-                        <p className=" font-semibold underline pb-1">Navigation</p>
-                        <ul className="flex flex-col wrap font-light">
-                            {navContent.map((nav) => (
-                                <li key={nav.name}>
-                                    <Link href={nav.href}>{nav.name}</Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav> */}
+                <div className="flex flex-col lg:flex-row lg:justify-between wrap items-center lg:items-start  mb-8 lg:mb-4">
+                    <SnsButtons></SnsButtons>
                     <ContactButton></ContactButton>
                 </div>
-                <div className="flex justify-center lg:justify-start">
+                <div className="flex justify-center lg:justify-start mb-2">
                     <Link
-                        className=" font-light text-sm hover:underline"
+                        className="font-light text-sm hover:underline"
                         href="https://storyset.com/job"
                         target="_blank"
                     >
                         Job illustrations by Storyset
                     </Link>
                 </div>
+                <p className="font-light text-sm text-center lg:text-left">
+                    &copy; 2024 @kkkumakk001(Github)
+                </p>
             </Container>
         </footer>
     );
