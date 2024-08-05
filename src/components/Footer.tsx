@@ -6,7 +6,7 @@ import SnsButtons from "./SnsButtons";
 
 const Footer = () => {
     return (
-        <footer className="py-8 border-t border-accent">
+        <footer className="py-8 border-t-2 border-accent">
             <Container>
                 <div className="flex flex-col lg:flex-row lg:justify-between wrap items-center lg:items-start  mb-8 lg:mb-4">
                     <SnsButtons></SnsButtons>
