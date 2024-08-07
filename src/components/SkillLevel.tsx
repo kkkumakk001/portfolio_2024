@@ -36,8 +36,8 @@ const skillLevel = [
 const SkillLevel = () => {
     return (
         <ul className="-mt-6 mb-12 p-6 rounded-2xl bg-accent border border-foreground/300">
-            {skillLevel.map((skill) => (
-                <li className="[&:not(:last-child)]:mb-4">
+            {skillLevel.map((skill, index) => (
+                <li key={index} className="[&:not(:last-child)]:mb-4">
                     <div>{skill.level}</div>
                     <p>{skill.label}</p>
                 </li>
