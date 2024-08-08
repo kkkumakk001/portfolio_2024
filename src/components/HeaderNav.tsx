@@ -15,6 +15,7 @@ const navContent = [
     { name: "Work", pageTitle: "Work Page", href: "/work" },
     { name: "Blog", pageTitle: "Blog Page", href: "/blog" },
     { name: "Contact", pageTitle: "Contact Page", href: "/contact" },
+    { name: "Fetch", pageTitle: "Fetch Page", href: "/fetchTest" },
 ];
 
 const HeaderNav = () => {
