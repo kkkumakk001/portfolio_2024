@@ -1,13 +1,15 @@
 import Hero from "@/components/Hero";
+import AboutSection from "@/components/AboutSection";
 import SkillsMarquee from "@/components/Marquee";
 import SkillSection from "@/components/SkillSection";
 
 export default function Home() {
     return (
         <>
-            <Hero></Hero>
-            <SkillsMarquee></SkillsMarquee>
-            <SkillSection></SkillSection>
+            <Hero />
+            <SkillsMarquee />
+            <AboutSection />
+            <SkillSection />
         </>
     );
 }
