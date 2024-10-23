@@ -24,42 +24,40 @@ const learningHistory = [
 
 const AboutSection = () => {
     return (
-        <>
-            <SectionWrap title="ABOUT" desc="簡単な自己紹介をさせてください">
-                <div className="flex flex-wrap md:justify-between">
-                    <div className="w-full md:w-[45%] mb-12 md:mb-0">
-                        <p className="text-xl">K.K</p>
-                        <p className="mb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas a
-                            voluptatem tenetur odit enim amet incidunt fugiat ex possimus?
-                        </p>
-                        <Button asChild>
-                            <Link
-                                href="/work"
-                                className="flex flex-wrap gap-1 items-center border border-[var(--border)] rounded-md py-2 px-4 w-fit mb-4"
-                            >
-                                <span>作品を見る</span>
-                                <ChevronRightIcon />
-                            </Link>
-                        </Button>
-                        <p>詳細な学習履歴をまとめました</p>
-                        <Link href="#">(Notion)</Link>
-                    </div>
-                    <div className="w-full md:w-[45%]">
-                        <ul className="flex flex-col">
-                            {learningHistory.map((item) => (
-                                <li className="[&:not(:last-child)]:mb-4" key="item">
-                                    <p className="border-l-4 border-[var(--primary)] pl-2">
-                                        {item.date}
-                                    </p>
-                                    <p className="pl-3">{item.desc}</p>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+        <SectionWrap title="ABOUT" desc="簡単な自己紹介をさせてください">
+            <div className="flex flex-wrap md:justify-between">
+                <div className="w-full md:w-[45%] mb-12 md:mb-0">
+                    <p className="text-xl">K.K</p>
+                    <p className="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas a
+                        voluptatem tenetur odit enim amet incidunt fugiat ex possimus?
+                    </p>
+                    <Button asChild>
+                        <Link
+                            href="/work"
+                            className="flex flex-wrap gap-1 items-center border border-[var(--border)] rounded-md py-2 px-4 w-fit mb-4"
+                        >
+                            <span>作品を見る</span>
+                            <ChevronRightIcon />
+                        </Link>
+                    </Button>
+                    <p>詳細な学習履歴をまとめました</p>
+                    <Link href="#">(Notion)</Link>
                 </div>
-            </SectionWrap>
-        </>
+                <div className="w-full md:w-[45%]">
+                    <ul className="flex flex-col">
+                        {learningHistory.map((item) => (
+                            <li className="[&:not(:last-child)]:mb-4" key={item.desc}>
+                                <p className="border-l-4 border-[var(--primary)] pl-2">
+                                    {item.date}
+                                </p>
+                                <p className="pl-3">{item.desc}</p>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+        </SectionWrap>
     );
 };
 

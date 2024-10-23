@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import {
     SiGithub,
     SiNextdotjs,
@@ -126,7 +126,7 @@ const SkillCard = () => {
                         <CardTitle className="text-sm font-semibold text-center">
                             {skill.label}
                         </CardTitle>
-                        <CardDescription className="text-justify">{skill.level}</CardDescription>
+                        <div className="text-justify">{skill.level}</div>
                     </CardHeader>
                 </Card>
             ))}

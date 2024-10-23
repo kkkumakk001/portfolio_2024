@@ -16,6 +16,7 @@ const Hero = () => {
                             alt="メインの画像です"
                             width={400}
                             height={400}
+                            priority
                         ></Image>
                     </div>
                     <div className="w-full lg:w-1/2 flex flex-col wrap items-center lg:items-start lg:justify-center">
