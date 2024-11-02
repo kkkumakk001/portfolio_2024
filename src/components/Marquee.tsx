@@ -64,12 +64,12 @@ const icons = [
 
 export default function SkillsMarquee() {
     return (
-        <div className="my-24 lg:my-16 mx-auto max-w-[800px] overflow-hidden">
+        <div id="marquee" className="my-16 lg:my-12 mx-auto max-w-[800px] overflow-hidden">
             <span className="sr-only">セクションタイトル</span>
             <Marquee
                 speed={30}
                 gradient
-                gradientColor="hsl(var(--background))"
+                gradientColor="hsl(var(--primary/50))"
                 gradientWidth={120}
                 className="text-muted-foreground"
             >

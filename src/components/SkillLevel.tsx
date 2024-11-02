@@ -1,4 +1,5 @@
 import { StarIcon, StarFilledIcon } from "@radix-ui/react-icons";
+import { FadeAnimation } from "./FadeAnimation";
 
 const skillLevel = [
     {
@@ -35,14 +36,17 @@ const skillLevel = [
 
 const SkillLevel = () => {
     return (
-        <div className="-mt-6 mb-12 p-6 rounded-2xl bg-accent border border-foreground/300">
+        <FadeAnimation
+            type="slideUp"
+            className="-mt-6 mb-12 p-6 rounded-2xl border border-border/30"
+        >
             {skillLevel.map((skill, index) => (
                 <div key={index} className="[&:not(:last-child)]:mb-4">
                     {skill.level}
                     <p>{skill.label}</p>
                 </div>
             ))}
-        </div>
+        </FadeAnimation>
     );
 };
 
