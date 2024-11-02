@@ -2,6 +2,7 @@ import Link from "next/link";
 import SectionWrap from "./SectionWrap";
 import { ChevronRightIcon } from "@radix-ui/react-icons";
 import { Button } from "./ui/button";
+import { FadeAnimation } from "./FadeAnimation";
 
 const learningHistory = [
     {
@@ -48,10 +49,12 @@ const AboutSection = () => {
                     <ul className="flex flex-col">
                         {learningHistory.map((item) => (
                             <li className="[&:not(:last-child)]:mb-4" key={item.desc}>
-                                <p className="border-l-4 border-[var(--primary)] pl-2">
-                                    {item.date}
-                                </p>
-                                <p className="pl-3">{item.desc}</p>
+                                <FadeAnimation type="slideUp">
+                                    <p className="border-l-4 border-[var(--primary)] pl-2">
+                                        {item.date}
+                                    </p>
+                                    <p className="pl-3">{item.desc}</p>
+                                </FadeAnimation>
                             </li>
                         ))}
                     </ul>
