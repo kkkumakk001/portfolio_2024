@@ -15,7 +15,7 @@ const HeaderNav = () => {
             <ul className="flex gap-4">
                 {navContent.map((nav) => {
                     return (
-                        <li key={nav.name}>
+                        <li key={nav.name} className="text-sm">
                             <Link href={nav.href}>{nav.name}</Link>
                         </li>
                     );
