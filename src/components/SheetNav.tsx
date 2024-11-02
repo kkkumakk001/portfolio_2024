@@ -1,35 +1,42 @@
 "use client";
 
 import React, { useState } from "react";
-import { Sheet, SheetContent, SheetTrigger } from "../components/ui/sheet";
+import {
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetTitle,
+    SheetTrigger,
+} from "../components/ui/sheet";
 import Link from "next/link";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 const navLink = [
-    { name: "Home", href: "" },
-    { name: "Work", href: "work" },
-    { name: "Contact", href: "contact" },
-    { name: "Blog", href: "blog" },
+    { name: "Home", href: "", delay: "delay-300" },
+    { name: "Work", href: "work", delay: "delay-600" },
+    { name: "Contact", href: "contact", delay: "delay-900" },
+    { name: "Blog", href: "blog", delay: "delay-1200" },
 ];
 
 const SheetNav = () => {
     const [open, setOpen] = useState(false);
     return (
-        // <Sheet>
         <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger className="md:hidden">
                 <HamburgerMenuIcon></HamburgerMenuIcon>
             </SheetTrigger>
             <SheetContent
-                side={"top"}
-                className="flex h-screen flex-col flex-wrap items-center justify-center"
+                side={"right"}
+                className="flex h-dvh flex-col flex-wrap items-center justify-center bg-gray-900"
             >
+                <SheetTitle className="hidden">ナビゲーション</SheetTitle>
+                <SheetDescription className="hidden">ナビゲーション</SheetDescription>
                 {navLink.map((nav) => {
                     return (
                         <Link
                             key={nav.name}
                             href={`/${nav.href}`}
-                            className="hover:underline"
+                            className={`hover:underline animate-text-pop-up-top ${nav.delay}`}
                             onClick={() => {
                                 setOpen(false);
                             }}
