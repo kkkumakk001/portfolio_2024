@@ -1,12 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { noto_Sans_JP, open_Sans } from "./fonts";
+
 import Header from "../components/Header";
-import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -15,19 +13,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="ja" suppressHydrationWarning={true}>
-            <body className={inter.className}>
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="light"
-                    enableSystem
-                    disableTransitionOnChange
-                >
-                    <Header></Header>
-                    <main className="py-20">{children}</main>
-                    <Toaster></Toaster>
-                    <Footer></Footer>
-                </ThemeProvider>
+        <html
+            lang="ja"
+            suppressHydrationWarning={true}
+            className={`${noto_Sans_JP.variable} ${open_Sans.variable}`}
+        >
+            <body className="bg-gray-900 text-white">
+                <Header></Header>
+                <main className="">{children}</main>
+                <Toaster></Toaster>
+                <Footer></Footer>
             </body>
         </html>
     );
