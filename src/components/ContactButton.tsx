@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const ContactButton = () => {
     return (
-        <Button asChild className="w-[150px]">
-            <Link href="/contact">
+        <Button asChild className="w-[120px]">
+            <Link href="/contact" className="font-en">
                 Contact<CaretRightIcon></CaretRightIcon>
             </Link>
         </Button>
