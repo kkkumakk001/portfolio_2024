@@ -28,7 +28,7 @@ export default function Template({ children, disableAnimation = false }: Templat
             transition={{
                 type: "tween",
                 ease: "easeOut",
-                duration: 0.3,
+                duration: 0.6,
             }}
         >
             {children}
