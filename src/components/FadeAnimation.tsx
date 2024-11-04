@@ -32,7 +32,7 @@ export const FadeAnimation: React.FC<AnimationProps> = ({
                 }
             },
             {
-                rootMargin: "-50px",
+                rootMargin: "0px",
                 threshold: 0.1,
             }
         );
@@ -51,7 +51,7 @@ export const FadeAnimation: React.FC<AnimationProps> = ({
     const animationClass = {
         fade: "opacity-0",
         slideLeft: "opacity-0 -translate-x-8",
-        slideUp: "opacity-0 translate-y-4",
+        slideUp: "opacity-0 translate-y-8",
     }[type];
 
     return (
