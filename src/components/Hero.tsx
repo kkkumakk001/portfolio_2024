@@ -6,7 +6,7 @@ import TypeWriter from "./Typewriter";
 
 const Hero = () => {
     return (
-        <div className="relative font-en h-dvh flex items-center justify-center overflow-hidden">
+        <div className="relative font-en h-svh flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0 opacity-20">
                 <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 border border-blue-400 transform rotate-45"></div>
                 <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 border border-blue-400 transform -rotate-45"></div>
