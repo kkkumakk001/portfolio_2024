@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://kkkumakk-portfolio.vercel.app"),
     title: "K.K`s Portfolio",
     description: "ポートフォリオです",
     openGraph: {
