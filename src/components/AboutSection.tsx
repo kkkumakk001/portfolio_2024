@@ -25,7 +25,7 @@ const learningHistory = [
 
 const AboutSection = () => {
     return (
-        <SectionWrap title="ABOUT" desc="簡単な自己紹介をさせてください">
+        <SectionWrap title="ABOUT" desc="簡単な自己紹介をさせてください" type="slideLeft">
             <div className="flex flex-wrap md:justify-between">
                 <div className="w-full md:w-[45%] mb-12 md:mb-0">
                     <p className="text-xl">K.K</p>
