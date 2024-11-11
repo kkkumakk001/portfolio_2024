@@ -9,15 +9,14 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
     title: "K.K`s Portfolio",
     description: "ポートフォリオです",
-    keywords: ["ポートフォリオ", "Next.js", "shadcnui"],
     openGraph: {
-        title: "K.Kのポートフォリオ",
+        title: "K.K's Portfolio",
         description: "ポートフォリオです",
         url: "https://kkkumakk-portfolio.vercel.app/",
         siteName: "Portfolio",
         images: [
             {
-                url: "../../public/images/Portfolio-heroImage.png",
+                url: "/images/Portfolio-heroImage.png",
                 width: 1200,
                 height: 630,
             },
