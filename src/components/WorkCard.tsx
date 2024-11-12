@@ -1,5 +1,4 @@
-import Image from "next/image";
-import DummyImage from "../../public/images/DummyImage.png";
+import Image, { StaticImageData } from "next/image";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
@@ -10,6 +9,7 @@ interface Work {
     date: string;
     desc: string;
     skills: string[];
+    img: StaticImageData;
 }
 
 interface Props {
@@ -26,7 +26,7 @@ const WorkCard = ({ works }: Props) => {
                 >
                     <div className="overflow-hidden">
                         <Image
-                            src={DummyImage}
+                            src={work.img}
                             alt="作品のスクリーンショットです"
                             width={600}
                             height={400}
